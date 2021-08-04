@@ -33,7 +33,7 @@ openssl rsa -in rsa/github.com/zhangshanwen/the_one.rsa -pubout > rsa/github.com
 ├── router            # 路由
 │   ├── api
 ├── rsa               # jwt 公私钥
-└── tools             # 该工具
+└── tools             # 工具
     ├── jwt.go
     ├── jwt_test.go
     └── rsa
