@@ -3,9 +3,9 @@
  1. 生成公私钥
 ```
 生成私钥
-openssl genrsa -out rsa/github.com/zhangshanwen/the_one.rsa
+openssl genrsa -out rsa/the_one.rsa
 根据私钥生成公钥
-openssl rsa -in rsa/github.com/zhangshanwen/the_one.rsa -pubout > rsa/github.com/zhangshanwen/the_one.rsa.pub
+openssl rsa -in rsa/the_one.rsa -pubout > rsa/the_one.rsa.pub
 ```
 
 2.目录树
