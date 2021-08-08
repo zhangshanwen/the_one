@@ -22,7 +22,7 @@ func InitMysql() {
 	var err error
 	m := conf.C.DB.Mysql
 	newLogger := logger.New(
-		log.New(l.Logger.Writer(), "\r\n", log.LstdFlags), // io writer
+		log.New(l.Logger.Out, "\r\n", log.LstdFlags), // io writer
 		logger.Config{
 			SlowThreshold:             time.Second, // Slow SQL threshold
 			LogLevel:                  logger.Info, // Log level

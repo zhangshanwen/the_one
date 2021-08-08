@@ -12,11 +12,6 @@ import (
 	"github.com/zhangshanwen/the_one/tools"
 )
 
-func Handel(fun func(c *service.Context) service.Res) gin.HandlerFunc {
-	return func(c *gin.Context) {
-		service.Json(c, fun(&service.Context{Context: c}))
-	}
-}
 func verifyJwt(c *gin.Context) (res service.Res, claims *tools.Claims) {
 	h := header.Authorization{}
 	if res.Err = c.ShouldBindHeader(&h); res.Err != nil {
