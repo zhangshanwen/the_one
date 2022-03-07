@@ -37,5 +37,16 @@ openssl rsa -in rsa/the_one.rsa -pubout > rsa/the_one.rsa.pub
     ├── jwt.go
     ├── jwt_test.go
     └── rsa
+```
 
+3.运行
+
+```shell script
+make run 
+```
+
+4.编译
+
+```shell script
+make build
 ```

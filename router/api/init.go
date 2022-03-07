@@ -8,5 +8,6 @@ import (
 func RegisterApiV1Router() {
 	api := app.R.Group("api")
 	group := api.Group("v1")
+	v1.InitVersion(group)
 	v1.InitUserRouter(group)
 }
