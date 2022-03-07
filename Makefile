@@ -1,3 +1,4 @@
+Project = the_one
 
 NOW = $(shell date  '+%Y-%m-%d %H:%M:%S')
 
@@ -9,10 +10,10 @@ check: test all build clean fmt todo legacy
 
 
 build:
-	go build  -ldflags "-X  'github.com/zhangshanwen/the_one/api/v1.version=$(NOW)' "  -o bin/shard  cmd/api.go
+	go build  -ldflags "-X  'github.com/zhangshanwen/$(Project)/api/v1.version=$(NOW)' "  -o bin/$(Project)  cmd/api.go
 
 run:build
-	./bin/shard
+	./bin/$(Project)
 
 
 clean:
